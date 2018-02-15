@@ -19,10 +19,6 @@ macro_rules! net_trace {
     ($($arg:expr),*) => (net_log!(trace, $($arg),*));
 }
 
-macro_rules! net_debug {
-    ($($arg:expr),*) => (net_log!(debug, $($arg),*));
-}
-
 macro_rules! enum_with_unknown {
     (
         $( #[$enum_attr:meta] )*

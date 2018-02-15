@@ -86,7 +86,7 @@ extern crate libc;
 #[cfg(feature = "alloc")]
 extern crate alloc;
 #[cfg(feature = "log")]
-#[macro_use(log, trace, debug)]
+#[macro_use(log, trace)]
 extern crate log;
 
 use core::fmt;
@@ -98,8 +98,6 @@ mod parsers;
 pub mod storage;
 pub mod phy;
 pub mod wire;
-pub mod iface;
-pub mod socket;
 pub mod time;
 
 /// The error type for the networking stack.

@@ -1,3 +1,9 @@
+## **Note:**
+
+This branch is a micro-fork of smoltcp which removes functionality in order for
+it to run on stable Rust. It is intended to be a temporary measure which will
+be unnecessary once the `slice_rotate` feature hits stable.
+
 # smoltcp
 
 _smoltcp_ is a standalone, event-driven TCP/IP stack that is designed for bare-metal,
